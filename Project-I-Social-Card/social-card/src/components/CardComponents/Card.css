@@ -13,7 +13,7 @@
 
 .card-content {
   margin-top: -5px;
-  padding: 10px 10px 10px 15px;
+  padding: 10px 10px 0 15px;
   border: 1px solid lightgrey;
   border-radius: 0 0 8px 8px;
 }
@@ -28,7 +28,8 @@
   font-weight: 400;
 }
 
-.card-link {
+.card-link a {
+  text-decoration: none;
   color: darkgrey;
   font-size: 14px;
   font-weight: 300;

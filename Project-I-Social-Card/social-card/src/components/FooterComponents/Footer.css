@@ -4,8 +4,10 @@
 
 .fa-comment {
   transform: scaleX(-1);
+  cursor: pointer;
 }
 
 .icon {
-  padding-left: 60px;
+  margin-left: 60px;
+  cursor: pointer;
 }
