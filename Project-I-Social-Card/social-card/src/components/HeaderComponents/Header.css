@@ -1,1 +1,14 @@
 /* All styles for your header Components live here */
+
+
+.header-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header-title span {
+  color: darkgrey;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 5px;
+}
