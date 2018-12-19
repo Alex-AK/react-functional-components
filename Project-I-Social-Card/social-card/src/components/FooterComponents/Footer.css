@@ -1,0 +1,11 @@
+.footer-container {
+  padding: 20px 0 0 85px;
+}
+
+.fa-comment {
+  transform: scaleX(-1);
+}
+
+.icon {
+  padding-left: 60px;
+}
