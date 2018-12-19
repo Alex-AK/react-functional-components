@@ -1,5 +1,17 @@
 /* All styles for your header Components live here */
 
+.header-container {
+  border: 1px solid red;
+  display: flex;
+}
+
+.image-thumbnail {
+  display: inline-block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
 
 .header-title {
   font-size: 16px;
@@ -11,4 +23,8 @@
   font-size: 13px;
   font-weight: 300;
   padding-left: 5px;
+}
+
+.header-content {
+  font-size: 15px;
 }
