@@ -1,7 +1,6 @@
 /* All styles for your header Components live here */
 
 .header-container {
-  border: 1px solid red;
   display: flex;
 }
 
