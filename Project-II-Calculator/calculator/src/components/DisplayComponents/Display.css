@@ -1,0 +1,6 @@
+.main-display {
+  width: 250px;
+  height: 300px;
+  border: 1px solid red;
+  margin: 40px auto;
+}
