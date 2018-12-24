@@ -1,0 +1,23 @@
+.button {
+  width: 25%;
+  height: 50px;
+  border: 1px solid #8c8c8c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-button {
+  background-color: #96001C;
+  color: white;
+  font-weight: 300;
+}
+
+.number-button {
+  font-weight: 800;
+}
+
+.wide-button {
+  font-weight: 800;
+  width: 75%;
+}
