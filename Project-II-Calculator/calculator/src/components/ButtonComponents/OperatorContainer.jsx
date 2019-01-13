@@ -12,6 +12,7 @@ const OperatorContainer = props => {
             text={operator}
             name={operator}
             key={'number' + index}
+            buttonClick={props.buttonClick}
           />
         );
       })}

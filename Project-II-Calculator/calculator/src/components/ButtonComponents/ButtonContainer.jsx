@@ -11,6 +11,8 @@ const ButtonContainer = props => {
         text={number}
         key={'number' + index}
         clicked={props.clicked}
+        buttonClick={props.buttonClick}
+        number={props.number}
       />
     );
   });
@@ -21,10 +23,10 @@ const ButtonContainer = props => {
         text="clear"
         fontWeight="light"
         clearDisplay={props.clearDisplay}
-        clicked={props.clicked}
+        buttonClick={props.buttonClick}
       />
       {numberButton}
-      <WideButton text="0" clicked={props.clicked} />
+      <WideButton text="0" buttonClick={props.buttonClick} />
     </div>
   );
 };

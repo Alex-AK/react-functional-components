@@ -3,12 +3,13 @@ import './Button.css';
 
 const NumberButton = props => {
   return (
-    <p
+    <button
       className={`button number-button ${props.width} ${props.fontWeight}`}
-      onClick={props.clicked}
+      onClick={props.buttonClick}
+      value={props.text}
     >
       {props.text}
-    </p>
+    </button>
   );
 };
 

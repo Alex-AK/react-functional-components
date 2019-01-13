@@ -3,13 +3,14 @@ import './Button.css';
 
 const OperatorButton = props => {
   return (
-    <p
+    <button
       className="button operator-button"
       name={props.name}
-      onClick={props.clicked}
+      onClick={props.buttonClick}
+      value={props.text}
     >
       {props.text}
-    </p>
+    </button>
   );
 };
 

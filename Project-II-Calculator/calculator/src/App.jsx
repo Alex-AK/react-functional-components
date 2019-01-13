@@ -15,29 +15,51 @@ class App extends Component {
     super(props);
 
     this.state = {
-      displayNumber: 1
+      displayNumber: 1,
+      text: []
     };
   }
 
   clearDisplay = () => {
-    this.setState({ displayNumber: 0 });
-    // console.log(this.state.displayNumber);
+    this.setState({ text: 0 });
   };
 
-  clicked = () => {
-    console.log(this.state.displayNumber);
+  //  - Create some `handler functions` that can take in some information from an, `onClick` and use that information to update the `total` on the App state.
+  buttonClick = event => {
+    let newArray = this.state.text;
+    newArray.push(event.target.value);
+    this.setState({ text: newArray });
+    if (event.target.value === '=') {
+      this.calculate();
+    }
+  };
+
+  calculate = () => {
+    const { text } = this.state;
+    // const lastItem = text[text.length - 1];
+    if (text.length > 0) {
+      text.pop();
+      this.setState({ text: [eval(text.join(''))] });
+      console.log(eval(text.join('')));
+    } else {
+      return;
+    }
   };
 
   render() {
     return (
       <div className="container">
-        <CalculatorDisplay displayNumber={this.state.displayNumber} />
+        <CalculatorDisplay displayNumber={this.state.text.join('')} />
         <ButtonContainer
           numbers={numbers}
           clicked={this.clicked}
           clearDisplay={this.clearDisplay}
+          buttonClick={this.buttonClick}
         />
-        <OperatorContainer operators={operators} />
+        <OperatorContainer
+          operators={operators}
+          buttonClick={this.buttonClick}
+        />
       </div>
     );
   }
