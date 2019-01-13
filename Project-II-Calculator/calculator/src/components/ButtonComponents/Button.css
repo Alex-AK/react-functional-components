@@ -1,8 +1,9 @@
 .button {
-  width: 25%;
+  width: 33.33%;
   height: 95px;
-  background: white;
   border: 1px solid #8c8c8c;
+  color: #1F1F1F;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,18 +11,36 @@
   font-weight: 700;
 }
 
-.action-button {
-  width: 75%;
+.button:hover {
+  background: #dddddd;
 }
 
-
-.crimson {
-  background: #96001c;
+.operator-button {
+  width: 100%;
+  background-color: #96001C;
   color: white;
   font-weight: 300;
-  font-size: 50px;
+}
+
+.operator-button:hover {
+  background: #7f0017;
+}
+
+.button-container {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.operator-container {
+  width: 25%;
 }
 
 .light {
   font-weight: 300;
+}
+
+.wide-button {
+  width: 100%;
 }
