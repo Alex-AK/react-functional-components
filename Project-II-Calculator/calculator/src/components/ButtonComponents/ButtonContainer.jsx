@@ -17,9 +17,13 @@ const ButtonContainer = props => {
 
   return (
     <div className="button-container">
-      <WideButton text="clear" fontWeight="light" clicked={props.clicked} />
+      <WideButton
+        text="clear"
+        fontWeight="light"
+        clearDisplay={props.clearDisplay}
+        clicked={props.clicked}
+      />
       {numberButton}
-
       <WideButton text="0" clicked={props.clicked} />
     </div>
   );

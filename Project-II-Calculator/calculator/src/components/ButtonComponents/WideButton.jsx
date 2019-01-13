@@ -5,7 +5,7 @@ const WideButton = props => {
   return (
     <p
       className={`button wide-button ${props.fontWeight}`}
-      onClick={props.clicked}
+      onClick={props.clearDisplay}
     >
       {props.text}
     </p>

@@ -15,30 +15,29 @@ class App extends Component {
     super(props);
 
     this.state = {
-      displayNumber: 0
+      displayNumber: 1
     };
   }
 
-  clearDisplay = event => {
-    event.preventDefault();
-    this.setState({ display: 0 });
+  clearDisplay = () => {
+    this.setState({ displayNumber: 0 });
+    // console.log(this.state.displayNumber);
   };
 
-  clicked = event => {
-    console.log('clicked');
-    console.log(event.target.name);
+  clicked = () => {
+    console.log(this.state.displayNumber);
   };
 
   render() {
     return (
       <div className="container">
-        <CalculatorDisplay display={this.state.displayNumber} />
+        <CalculatorDisplay displayNumber={this.state.displayNumber} />
         <ButtonContainer
           numbers={numbers}
           clicked={this.clicked}
           clearDisplay={this.clearDisplay}
         />
-        <OperatorContainer operators={operators} clicked={this.clicked} />
+        <OperatorContainer operators={operators} />
       </div>
     );
   }
